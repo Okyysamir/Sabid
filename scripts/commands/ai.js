@@ -29,7 +29,7 @@ gpt({
     messages: [
         {
             role: "assistant",
-            content: "Hello! How are you today?"
+            content: "Hello! আমি আপনাকে কিভাবে সাহায্য করতে পারি যদি আপনি উত্তর বাংলায় চান বাংলায় প্রশ্ন করুন আর যদি ইংলিশ এ চান ইংলিশ এ প্রশ্ন করুন?"
         },
         {
             role: "user",
