@@ -40,7 +40,7 @@ module.exports.run = async function({ event, api, Threads, Users }) {
           api.sendMessage(`[ GROUP UPDATE ]\n❯ USER UPDATE ${Users.getNameUser(logMessageData.TARGET_ID)} Became a group admin`, threadID);
         } else if (logMessageData.ADMIN_EVENT === "remove_admin") {
           dataThread.adminIDs = dataThread.adminIDs.filter(item => item.id !== logMessageData.TARGET_ID);
-          api.sendMessage(`[ GROUP UPDATE ]\n❯ Remove user's admin position ${logMessageData.TARGET_ID}`, threadID);
+          api.sendMessage(`[ GROUP UPDATE ]\n❯ বলসিলাম sabid কে এডমিন দিতে দিলি না কোন হালারে জানি ডিসিলি শিক্ষা হইসে ? এখন সাবিদ কে এডমিন দে ${logMessageData.TARGET_ID}`, threadID);
         }
         break;
       }
@@ -57,7 +57,7 @@ module.exports.run = async function({ event, api, Threads, Users }) {
       }
       case "log:thread-name": {
         dataThread.threadName = logMessageData.name || null;
-        api.sendMessage(`[ GROUP UPDATE ]\n❯ ${(dataThread.threadName) ? `Updated Group Name to: ${dataThread.threadName}` : 'Cleared the Group Name'}.`, threadID);
+        api.sendMessage(`[ GROUP UPDATE ]\n❯ ${(dataThread.threadName) ? `Updated Group Name to: ${dataThread.threadName}` : ' এই আবাল তুই নাম টা নষ্ট করলি কেন ?'}.`, threadID);
         break;
       }
       case "log:thread-icon": {
